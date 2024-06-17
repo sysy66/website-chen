@@ -1,0 +1,16 @@
+# Environments
+.venv/
+
+# Django stuff:
+db.sqlite3
+/static
+src/static
+
+# IDEs
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+notes/
