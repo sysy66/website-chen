@@ -6,11 +6,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .invalid-feedback{
+            display: block;
+        }
+    </style>
   </head>
 
   <body>
     <div class="container">
-
+    
       <div class="row justify-content-center p-5 bg-body-tertiary rounded-3">
         <div class="col-lg-6 text-center">
           <h1 class="display-1 mb-4">{% block header_text %}{% endblock %}</h1>
@@ -33,6 +38,16 @@
       </div>
 
     </div>
-  </body>
+    <script src="/static/jquery-3.7.1.min.js"></script>
+    <script src="/static/list.js"></script>
 
+    <script>
+
+$(document).ready(function () {
+  window.Superlists.initialize();
+});
+
+    </script>
+
+  </body>
 </html>
