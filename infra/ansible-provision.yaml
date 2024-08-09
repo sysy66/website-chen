@@ -64,7 +64,7 @@
           - type: bind
             source: /home/chen/websites/wh-starstone/db.sqlite3
             target: /src/db.sqlite3
-        ports: 80:8888
+        ports: 81:8888
 
     - name: Run migration inside container
       community.docker.docker_container_exec:
